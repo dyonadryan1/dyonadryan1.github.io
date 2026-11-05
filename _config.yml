@@ -1,0 +1,11 @@
+# ============================================================================
+#  Pengaturan situs dyonadryan1.github.io
+#  Gudang Offline: ISI "developer" dan "email" sebelum mengunggah.
+#  (index.html di akar & app-ads.txt tidak terpengaruh berkas ini.)
+# ============================================================================
+gudang:
+  developer: "Eon Dubz"          # sama dengan nama developer di Play Console
+  email: "dyonadryan1@contoh.com"             # email dukungan (sama dengan di aplikasi)
+  effective_date_en: "November 5, 2026"     # tanggal kebijakan berlaku (Inggris)
+  effective_date_id: "5 November 2026"      # tanggal yang sama (Indonesia)
+  package: "com.eondubz.gudang"             # jangan diubah

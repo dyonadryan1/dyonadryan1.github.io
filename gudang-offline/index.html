@@ -1,0 +1,42 @@
+---
+layout: null
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gudang Offline — inventory app that works without internet</title>
+  <meta name="description" content="Gudang Offline keeps your stock records on your own phone. Scan barcodes, export Excel and PDF reports, and back up to your own Google Drive.">
+  <meta name="theme-color" content="#0555BD">
+  <link rel="icon" type="image/png" href="/gudang-offline/favicon.png">
+  <link rel="apple-touch-icon" href="/gudang-offline/icon.png">
+  <style>{% include gudang-style.css %}</style>
+</head>
+<body>
+  <div class="wrap">
+    <main class="hero">
+      <img src="/gudang-offline/icon.png" width="96" height="96" alt="Gudang Offline app icon">
+      <h1>Gudang Offline</h1>
+      <p class="lead">Stock records that stay on your phone, even without internet.</p>
+      <p class="lead" lang="id">Catatan stok barang yang tetap tersimpan di HP Anda, bahkan tanpa internet.</p>
+      <div class="code" aria-hidden="true"></div>
+      <div class="actions">
+        <a class="btn primary" href="https://play.google.com/store/apps/details?id={{ site.gudang.package }}">Install from Google Play</a>
+        <a class="btn" href="/gudang-offline/privacy/#en">Privacy policy</a>
+        <a class="btn" href="/gudang-offline/privacy/#id" lang="id">Kebijakan privasi</a>
+      </div>
+      <ul class="facts">
+        <li><strong>Works without internet</strong><span lang="id">Bekerja tanpa internet</span></li>
+        <li><strong>Scan barcodes and QR codes</strong><span lang="id">Pindai barcode dan kode QR</span></li>
+        <li><strong>Excel and PDF reports</strong><span lang="id">Laporan Excel dan PDF</span></li>
+        <li><strong>Back up to your own Google Drive</strong><span lang="id">Cadangkan ke Google Drive milik Anda</span></li>
+      </ul>
+    </main>
+    <footer class="foot">
+      <p>Questions or feedback? Email <a href="mailto:{{ site.gudang.email }}">{{ site.gudang.email }}</a>.</p>
+      <p>&copy; {{ site.time | date: "%Y" }} {{ site.gudang.developer }}</p>
+    </footer>
+  </div>
+</body>
+</html>
