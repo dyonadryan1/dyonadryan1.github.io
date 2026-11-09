@@ -26,7 +26,7 @@ layout: null
     <article class="doc" id="id" lang="id">
       <h1>Kebijakan Privasi</h1>
       <p class="date">Berlaku sejak: {{ site.gudang.effective_date_id }}</p>
-      <p>Gudang Offline adalah aplikasi pencatatan stok yang berjalan tanpa internet. Tidak ada akun, tidak perlu mendaftar, dan tidak ada server milik kami. Kami, {{ site.gudang.developer }}, tidak mengumpulkan, menjual, atau membagikan data pribadi Anda.</p>
+      <p>Gudang Offline adalah aplikasi pencatatan stok yang berjalan tanpa internet. Tidak ada akun, tidak perlu mendaftar, dan tidak ada server milik kami. Kami, {{ site.gudang.developer }}, tidak punya akses ke data persediaan Anda dan tidak menjual data apa pun. Selain cadangan ke Google Drive yang Anda sambungkan sendiri, data hanya dikirim otomatis ke Google, untuk iklan dan diagnostik pemindai, seperti dijelaskan di bawah.</p>
       <h2>Data yang tersimpan di HP Anda</h2>
       <p>Aplikasi menyimpan data barang, transaksi stok, foto barang, kop surat, nama penanda tangan, dan pengaturan di penyimpanan pribadi aplikasi di HP Anda. Data ini tidak pernah keluar dari HP kecuali Anda sendiri yang mencadangkan atau membagikannya. Kami tidak dapat melihatnya.</p>
       <p>Saat foto barang disimpan, aplikasi membuang data lokasi (GPS) dari foto tersebut.</p>
@@ -39,14 +39,17 @@ layout: null
       <h2>Ekspor, berkas cadangan, dan berbagi</h2>
       <p>Saat Anda mengekspor ke Excel atau PDF, menyimpan berkas cadangan, atau membagikan daftar barang (misalnya lewat WhatsApp), data hanya pergi ke tempat atau aplikasi yang Anda pilih. Aplikasi atau layanan itu memprosesnya menurut kebijakannya sendiri.</p>
       <h2>Notifikasi dan kunci aplikasi</h2>
-      <p>Notifikasi menampilkan kemajuan ekspor, hasil pencadangan, dan pengingat kedaluwarsa. Anda dapat mematikannya di pengaturan Android.</p>
+      <p>Notifikasi menampilkan kemajuan ekspor dan pencadangan, hasil pencadangan, dan pengingat kedaluwarsa. Anda dapat mematikannya di pengaturan Android.</p>
       <p>Kunci aplikasi memakai sidik jari, wajah, atau kunci layar HP Anda. Aplikasi tidak pernah menerima data biometrik Anda.</p>
       <h2>Fitur Google Play</h2>
       <p>Pembaruan dan ulasan di dalam aplikasi disediakan oleh Google Play Store dan tunduk pada Kebijakan Privasi Google.</p>
       <h2>Masukan</h2>
       <p>Jika Anda mengirim masukan, aplikasi email Anda yang mengirim pesannya. Draf pesan memuat versi aplikasi, versi Android, dan model perangkat, yang boleh Anda hapus sebelum dikirim. Email Anda hanya kami pakai untuk membalas dan memperbaiki aplikasi.</p>
-      <h2>Tanpa iklan, tanpa pelacakan</h2>
-      <p>Aplikasi tidak memuat iklan maupun analitik milik kami. Selain diagnostik ML Kit, Google Drive (bila disambungkan), fitur Google Play, dan halaman kebijakan ini (dimuat dari situs web kami di GitHub Pages), aplikasi tidak memakai internet.</p>
+      <h2>Iklan (Google AdMob)</h2>
+      <p>Versi gratis menampilkan iklan dari Google AdMob: banner di bagian bawah layar, satu iklan di tab Laporan, dan video berhadiah yang hanya diputar bila Anda memilih “Hilangkan iklan 24 jam”. Data persediaan Anda tidak pernah dikirim ke penyedia iklan.</p>
+      <p>Untuk menampilkan dan mengukur iklan serta mencegah penipuan, SDK Google Mobile Ads mengumpulkan dan membagikan ke Google: alamat IP (untuk perkiraan lokasi umum), interaksi dengan aplikasi dan iklan, informasi diagnostik, serta pengenal perangkat seperti ID iklan Android. Data ini dienkripsi saat dikirim. Rinciannya: <a href="https://policies.google.com/technologies/partner-sites">cara Google menggunakan informasi dari aplikasi yang memakai layanannya</a>.</p>
+      <p>Pengguna di Wilayah Ekonomi Eropa, Inggris, dan Swiss dimintai persetujuan sebelum iklan dimuat, dan dapat mengubahnya kapan saja di Lainnya &gt; Pilihan privasi iklan. ID iklan dapat direset atau dihapus di Setelan Android. Kami sendiri tidak memakai analitik.</p>
+      <p>Selain iklan, diagnostik ML Kit, Google Drive (bila disambungkan), fitur Google Play, dan halaman kebijakan ini (dimuat dari situs web kami di GitHub Pages), aplikasi tidak memakai internet.</p>
       <h2>Penyimpanan dan penghapusan data</h2>
       <p>Data tetap di HP Anda sampai Anda menghapusnya di aplikasi atau mencopot aplikasi, yang menghapus seluruh data aplikasi. Cadangan tetap di Google Drive Anda sampai Anda menghapusnya.</p>
       <h2>Anak-anak</h2>
@@ -59,7 +62,7 @@ layout: null
     <article class="doc" id="en" lang="en">
       <h1>Privacy Policy</h1>
       <p class="date">Effective date: {{ site.gudang.effective_date_en }}</p>
-      <p>Gudang Offline is an inventory app that works without internet. It has no account, no sign-up and no server of ours. We, {{ site.gudang.developer }}, do not collect, sell or share your personal data.</p>
+      <p>Gudang Offline is an inventory app that works without internet. It has no account, no sign-up and no server of ours. We, {{ site.gudang.developer }}, have no access to your inventory data and do not sell any data. Apart from backups to a Google Drive you connect yourself, data is sent automatically only to Google, for ads and scanner diagnostics, as described below.</p>
       <h2>Data stored on your device</h2>
       <p>The app stores your items, stock transactions, item photos, letterhead details, signatory names and settings in its private storage on your phone. This data never leaves your device unless you choose to back it up or share it. We cannot see it.</p>
       <p>When you save an item photo, the app removes location (GPS) data from it.</p>
@@ -72,14 +75,17 @@ layout: null
       <h2>Exports, backup files and sharing</h2>
       <p>When you export to Excel or PDF, save a backup file, or share an item list (for example through WhatsApp), the data goes only to the place or app you choose. That app or service handles it under its own policy.</p>
       <h2>Notifications and app lock</h2>
-      <p>Notifications show export progress, backup results and expiry reminders. You can turn them off in Android settings.</p>
+      <p>Notifications show export and backup progress, backup results and expiry reminders. You can turn them off in Android settings.</p>
       <p>App lock uses your phone's fingerprint, face or screen lock. The app never receives your biometric data.</p>
       <h2>Google Play features</h2>
       <p>In-app updates and in-app reviews are provided by the Google Play Store and governed by Google's Privacy Policy.</p>
       <h2>Feedback</h2>
       <p>If you send feedback, your email app sends the message. The draft includes the app version, Android version and device model, which you may remove before sending. We use your email only to reply and to improve the app.</p>
-      <h2>No ads, no tracking</h2>
-      <p>The app contains no advertising and no analytics of ours. Apart from ML Kit diagnostics, Google Drive (when connected), Google Play features, and this policy page (loaded from our website on GitHub Pages), the app does not use the internet.</p>
+      <h2>Ads (Google AdMob)</h2>
+      <p>The free version shows ads from Google AdMob: a banner at the bottom of the screen, one ad on the Reports tab, and rewarded videos that play only when you choose “Remove ads for 24 hours”. Your inventory data is never sent to ad providers.</p>
+      <p>To show and measure ads and to prevent fraud, the Google Mobile Ads SDK collects and shares with Google: your IP address (for approximate location), app and ad interactions, diagnostic information, and device identifiers such as the Android advertising ID. This data is encrypted in transit. Details: <a href="https://policies.google.com/technologies/partner-sites">how Google uses information from apps that use its services</a>.</p>
+      <p>Users in the European Economic Area, the UK and Switzerland are asked for consent before ads load, and can change it at any time under More &gt; Ad privacy options. You can reset or delete the advertising ID in Android settings. We use no analytics of our own.</p>
+      <p>Apart from ads, ML Kit diagnostics, Google Drive (when connected), Google Play features, and this policy page (loaded from our website on GitHub Pages), the app does not use the internet.</p>
       <h2>Keeping and deleting your data</h2>
       <p>Your data stays on your phone until you delete it in the app or uninstall the app, which removes all app data. Backups stay in your Google Drive until you delete them.</p>
       <h2>Children</h2>
