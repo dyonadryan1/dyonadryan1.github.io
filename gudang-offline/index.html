@@ -6,40 +6,11 @@ layout: null
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gudang Offline — inventory app that works without internet</title>
-  <meta name="description" content="Gudang Offline records stock in and out, scans barcodes and reminds you of expiry dates — on your own phone, without internet.">
+  <title>Privacy Policy — Gudang Offline</title>
+  <meta name="description" content="How Gudang Offline handles your data. Kebijakan privasi Gudang Offline dalam bahasa Inggris dan Indonesia.">
   <meta name="theme-color" content="#0555BD">
-  <link rel="canonical" href="https://dyonadryan1.github.io/gudang-offline/">
   <link rel="icon" type="image/png" href="/gudang-offline/favicon.png">
-  <link rel="apple-touch-icon" href="/gudang-offline/icon.png">
-  <meta property="og:title" content="Gudang Offline">
-  <meta property="og:description" content="Inventory app that works without internet. Aplikasi stok barang tanpa internet.">
-  <meta property="og:image" content="https://dyonadryan1.github.io/gudang-offline/icon.png">
-  <meta property="og:url" content="https://dyonadryan1.github.io/gudang-offline/">
-  <style>{% include gudang-style.css %}
-.page{scroll-margin-top:50vh}
-.page h2{font-size:1.2rem;margin:2.5rem 0 .6rem}
-:root{--warn:#B3261E}
-@media (prefers-color-scheme:dark){:root{--warn:#FFB4AB}}
-.stock{margin:0;background:var(--surface);border:1px solid var(--line);border-radius:18px;overflow:hidden}
-.row{display:grid;grid-template-columns:44px 1fr auto;gap:.85rem;align-items:center;padding:.9rem 1rem}
-.row+.row{border-top:1px solid var(--line)}
-.avatar{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:var(--paper);color:var(--muted);font-weight:650}
-.name{display:block;font-weight:650}
-.sku{display:block;color:var(--muted);font-size:.88rem}
-.chips{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:.35rem}
-.chip{font-size:.78rem;padding:.05rem .5rem;border-radius:6px}
-.loc{background:color-mix(in srgb,var(--kraft) 18%,transparent)}
-.warn{background:color-mix(in srgb,var(--warn) 12%,transparent);color:var(--warn)}
-.qty{text-align:right;line-height:1.15}
-.qty b{display:block;font-size:1.6rem;font-weight:500}
-.qty small{color:var(--muted)}
-.qty.low b{color:var(--warn)}
-.stock figcaption{padding:.6rem 1rem .8rem;border-top:1px solid var(--line);color:var(--muted);font-size:.85rem}
-.note{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:.6rem 1.15rem}
-.note p{margin:.6rem 0}
-.foot p{margin:.25rem 0}
-  </style>
+  <style>{% include gudang-style.css %}</style>
 </head>
 <body>
   <div class="wrap">
@@ -52,106 +23,79 @@ layout: null
     </header>
     <div class="code" aria-hidden="true"></div>
     <main>
-    <section class="page" id="id" lang="id">
-      <div class="hero">
-        <h1>Gudang Offline</h1>
-        <p class="lead">Aplikasi stok barang untuk toko, gudang, dan kantor. Catat barang masuk dan keluar, pindai barcode, dan pantau tanggal kedaluwarsa — langsung di HP, tanpa internet.</p>
-        <div class="actions">
-          <a class="btn primary" href="https://play.google.com/store/apps/details?id={{ site.gudang.package }}">Pasang dari Google Play</a>
-          <a class="btn" href="/gudang-offline/privacy/#id">Kebijakan privasi</a>
-        </div>
-      </div>
-      <figure class="stock" aria-label="Contoh dua barang seperti tampil di aplikasi">
-        <div class="row">
-          <span class="avatar" aria-hidden="true">TA</span>
-          <div>
-            <span class="name">Telur Ayam</span>
-            <span class="sku">SKU-1004</span>
-            <span class="chips"><span class="chip loc">Rak depan</span><span class="chip warn">Kedaluwarsa 5 hari lagi</span></span>
-          </div>
-          <div class="qty"><b>23</b><small>Kg</small></div>
-        </div>
-        <div class="row">
-          <span class="avatar" aria-hidden="true">DT</span>
-          <div>
-            <span class="name">Deterjen 800 g</span>
-            <span class="sku">8997012340144</span>
-            <span class="chips"><span class="chip loc">Rak D</span><span class="chip warn">Di bawah minimum 6</span></span>
-          </div>
-          <div class="qty low"><b>4</b><small>Pak</small></div>
-        </div>
-        <figcaption>Setiap barang menunjukkan letaknya, sisa stoknya, dan apa yang perlu diperhatikan.</figcaption>
-      </figure>
-      <h2>Yang bisa Anda lakukan</h2>
-      <ul class="facts">
-        <li><strong>Catat stok tanpa internet</strong><span>Masuk, keluar, rusak, dan hilang, lengkap dengan riwayatnya.</span></li>
-        <li><strong>Pindai barcode dan QR</strong><span>Cari barang atau catat transaksi dengan kamera HP.</span></li>
-        <li><strong>Pengingat kedaluwarsa</strong><span>Diingatkan sebelum barang kedaluwarsa, dan langsung terlihat barang yang stoknya menipis.</span></li>
-        <li><strong>Laporan PDF dan Excel</strong><span>Mutasi persediaan, BAST, dan berita acara kehilangan dengan kop sendiri; impor dan ekspor Excel; cetak label QR.</span></li>
-        <li><strong>Cadangan ke Google Drive Anda</strong><span>Otomatis setiap hari, atau ke berkas untuk pindah HP.</span></li>
-        <li><strong>Kunci aplikasi</strong><span>Dengan sidik jari atau kunci layar HP.</span></li>
-      </ul>
-      <h2>Data Anda dan Google Drive</h2>
-      <div class="note">
-        <p>Data persediaan tersimpan di HP Anda. Gudang Offline tidak punya server, dan kami tidak pernah menerima data persediaan Anda.</p>
-        <p>Cadangan Google Drive bersifat pilihan. Saat dihubungkan, aplikasi hanya meminta akses ke berkas yang dibuatnya sendiri (izin <code>drive.file</code>), sehingga tidak bisa melihat isi Drive Anda yang lain, dan memakainya hanya untuk menyimpan serta memulihkan cadangan. Sambungan bisa diputus kapan saja di aplikasi, atau lewat <a href="https://myaccount.google.com/connections">myaccount.google.com/connections</a>.</p>
-        <p>Penggunaan informasi yang diterima Gudang Offline dari Google API mematuhi <a href="https://developers.google.com/terms/api-services-user-data-policy">Kebijakan Data Pengguna Layanan Google API</a>, termasuk persyaratan Penggunaan Terbatas (Limited Use).</p>
-        <p>Versi gratis menampilkan iklan dari Google AdMob. Rinciannya ada di <a href="/gudang-offline/privacy/#id">kebijakan privasi</a>.</p>
-      </div>
-    </section>
-    <section class="page" id="en" lang="en">
-      <div class="hero">
-        <h1>Gudang Offline</h1>
-        <p class="lead">An inventory app for shops, warehouses and offices. Record stock in and out, scan barcodes and keep track of expiry dates — on your phone, without internet.</p>
-        <div class="actions">
-          <a class="btn primary" href="https://play.google.com/store/apps/details?id={{ site.gudang.package }}">Install from Google Play</a>
-          <a class="btn" href="/gudang-offline/privacy/#en">Privacy policy</a>
-        </div>
-      </div>
-      <figure class="stock" aria-label="Two items as they appear in the app">
-        <div class="row">
-          <span class="avatar" aria-hidden="true">CE</span>
-          <div>
-            <span class="name">Chicken Eggs</span>
-            <span class="sku">SKU-1004</span>
-            <span class="chips"><span class="chip loc">Front shelf</span><span class="chip warn">Expires in 5 days</span></span>
-          </div>
-          <div class="qty"><b>23</b><small>Kg</small></div>
-        </div>
-        <div class="row">
-          <span class="avatar" aria-hidden="true">LD</span>
-          <div>
-            <span class="name">Laundry Detergent 800 g</span>
-            <span class="sku">8997012340144</span>
-            <span class="chips"><span class="chip loc">Shelf D</span><span class="chip warn">Below minimum of 6</span></span>
-          </div>
-          <div class="qty low"><b>4</b><small>Pack</small></div>
-        </div>
-        <figcaption>Every item shows where it is, how much is left and what needs attention.</figcaption>
-      </figure>
-      <h2>What you can do</h2>
-      <ul class="facts">
-        <li><strong>Record stock without internet</strong><span>In, out, damaged and lost, with a full history.</span></li>
-        <li><strong>Scan barcodes and QR codes</strong><span>Find an item or record a movement with your phone camera.</span></li>
-        <li><strong>Expiry reminders</strong><span>Get reminded before items expire, and see at a glance which items run low.</span></li>
-        <li><strong>PDF and Excel reports</strong><span>Stock movement, handover and loss reports with your own letterhead; Excel import and export; QR labels.</span></li>
-        <li><strong>Backup to your own Google Drive</strong><span>Automatically every day, or to a file to move to a new phone.</span></li>
-        <li><strong>App lock</strong><span>With your fingerprint or screen lock.</span></li>
-      </ul>
-      <h2>Your data and Google Drive</h2>
-      <div class="note">
-        <p>Your inventory is stored on your phone. Gudang Offline has no server, and we never receive your inventory data.</p>
-        <p>Google Drive backup is optional. When you connect it, the app asks only for access to the files it creates itself (the <code>drive.file</code> permission), so it cannot see the rest of your Drive, and it uses that access only to save and restore your backup. You can disconnect in the app at any time, or remove access at <a href="https://myaccount.google.com/connections">myaccount.google.com/connections</a>.</p>
-        <p>Gudang Offline’s use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
-        <p>The free version shows ads from Google AdMob. Details are in the <a href="/gudang-offline/privacy/#en">privacy policy</a>.</p>
-      </div>
-    </section>
+    <article class="doc" id="id" lang="id">
+      <h1>Kebijakan Privasi</h1>
+      <p class="date">Berlaku sejak: {{ site.gudang.effective_date_id }}</p>
+      <p>Gudang Offline adalah aplikasi pencatatan stok yang berjalan tanpa internet. Tidak ada akun, tidak perlu mendaftar, dan tidak ada server milik kami. Kami, {{ site.gudang.developer }}, tidak punya akses ke data persediaan Anda dan tidak menjual data apa pun. Selain cadangan ke Google Drive yang Anda sambungkan sendiri, data hanya dikirim otomatis ke Google, untuk iklan dan diagnostik pemindai, seperti dijelaskan di bawah.</p>
+      <h2>Data yang tersimpan di HP Anda</h2>
+      <p>Aplikasi menyimpan data barang, transaksi stok, foto barang, kop surat, nama penanda tangan, dan pengaturan di penyimpanan pribadi aplikasi di HP Anda. Data ini tidak pernah keluar dari HP kecuali Anda sendiri yang mencadangkan atau membagikannya. Kami tidak dapat melihatnya.</p>
+      <p>Saat foto barang disimpan, aplikasi membuang data lokasi (GPS) dari foto tersebut.</p>
+      <h2>Kamera</h2>
+      <p>Kamera hanya dipakai saat Anda memindai barcode atau kode QR, atau memotret barang. Gambar diproses di HP Anda.</p>
+      <h2>Google ML Kit (pemindai barcode)</h2>
+      <p>Pemindai barcode memakai Google ML Kit yang berjalan di HP Anda. ML Kit dapat mengirim informasi teknis ke Google untuk diagnostik dan analitik penggunaan: model perangkat dan versi Android, nama dan versi aplikasi, data kinerja dan galat, serta pengenal instalasi aplikasi. Menurut Google, data ini dienkripsi saat dikirim dan tidak diteruskan ke pihak ketiga. Daftar yang diterbitkan Google tidak mencakup gambar kamera maupun isi kode yang dipindai. Rinciannya: <a href="https://developers.google.com/ml-kit/android-data-disclosure">pengungkapan data ML Kit</a>.</p>
+      <h2>Cadangan Google Drive (opsional)</h2>
+      <p>Jika Anda menyambungkan Google Drive, aplikasi meminta izin Google untuk mengakses hanya berkas yang dibuatnya sendiri. Cadangan data, foto, dan kop surat diunggah ke Google Drive milik Anda dan tunduk pada Persyaratan Layanan serta Kebijakan Privasi Google. Kami tidak pernah menerima berkas tersebut. Anda dapat memutus sambungan Google Drive di aplikasi kapan saja dan menghapus berkas cadangan dari Drive Anda.</p>
+      <h2>Ekspor, berkas cadangan, dan berbagi</h2>
+      <p>Saat Anda mengekspor ke Excel atau PDF, menyimpan berkas cadangan, atau membagikan daftar barang (misalnya lewat WhatsApp), data hanya pergi ke tempat atau aplikasi yang Anda pilih. Aplikasi atau layanan itu memprosesnya menurut kebijakannya sendiri.</p>
+      <h2>Notifikasi dan kunci aplikasi</h2>
+      <p>Notifikasi menampilkan kemajuan ekspor dan pencadangan, hasil pencadangan, dan pengingat kedaluwarsa. Anda dapat mematikannya di pengaturan Android.</p>
+      <p>Kunci aplikasi memakai sidik jari, wajah, atau kunci layar HP Anda. Aplikasi tidak pernah menerima data biometrik Anda.</p>
+      <h2>Fitur Google Play</h2>
+      <p>Pembaruan dan ulasan di dalam aplikasi disediakan oleh Google Play Store dan tunduk pada Kebijakan Privasi Google.</p>
+      <h2>Masukan</h2>
+      <p>Jika Anda mengirim masukan, aplikasi email Anda yang mengirim pesannya. Draf pesan memuat versi aplikasi, versi Android, dan model perangkat, yang boleh Anda hapus sebelum dikirim. Email Anda hanya kami pakai untuk membalas dan memperbaiki aplikasi.</p>
+      <h2>Iklan (Google AdMob)</h2>
+      <p>Versi gratis menampilkan iklan dari Google AdMob: banner di bagian bawah layar, satu iklan di tab Laporan, dan video berhadiah yang hanya diputar bila Anda memilih “Hilangkan iklan 24 jam”. Data persediaan Anda tidak pernah dikirim ke penyedia iklan.</p>
+      <p>Untuk menampilkan dan mengukur iklan serta mencegah penipuan, SDK Google Mobile Ads mengumpulkan dan membagikan ke Google: alamat IP (untuk perkiraan lokasi umum), interaksi dengan aplikasi dan iklan, informasi diagnostik, serta pengenal perangkat seperti ID iklan Android. Data ini dienkripsi saat dikirim. Rinciannya: <a href="https://policies.google.com/technologies/partner-sites">cara Google menggunakan informasi dari aplikasi yang memakai layanannya</a>.</p>
+      <p>Pengguna di Wilayah Ekonomi Eropa, Inggris, dan Swiss dimintai persetujuan sebelum iklan dimuat, dan dapat mengubahnya kapan saja di Lainnya &gt; Pilihan privasi iklan. ID iklan dapat direset atau dihapus di Setelan Android. Kami sendiri tidak memakai analitik.</p>
+      <p>Selain iklan, diagnostik ML Kit, Google Drive (bila disambungkan), fitur Google Play, dan halaman kebijakan ini (dimuat dari situs web kami di GitHub Pages), aplikasi tidak memakai internet.</p>
+      <h2>Penyimpanan dan penghapusan data</h2>
+      <p>Data tetap di HP Anda sampai Anda menghapusnya di aplikasi atau mencopot aplikasi, yang menghapus seluruh data aplikasi. Cadangan tetap di Google Drive Anda sampai Anda menghapusnya.</p>
+      <h2>Anak-anak</h2>
+      <p>Aplikasi ini tidak ditujukan untuk anak di bawah 13 tahun, dan kami tidak dengan sengaja mengumpulkan data anak.</p>
+      <h2>Perubahan</h2>
+      <p>Setiap perubahan akan kami umumkan di halaman ini beserta tanggal berlaku yang baru.</p>
+      <h2>Kontak</h2>
+      <p>{{ site.gudang.developer }} — <a href="mailto:{{ site.gudang.email }}">{{ site.gudang.email }}</a></p>
+    </article>
+    <article class="doc" id="en" lang="en">
+      <h1>Privacy Policy</h1>
+      <p class="date">Effective date: {{ site.gudang.effective_date_en }}</p>
+      <p>Gudang Offline is an inventory app that works without internet. It has no account, no sign-up and no server of ours. We, {{ site.gudang.developer }}, have no access to your inventory data and do not sell any data. Apart from backups to a Google Drive you connect yourself, data is sent automatically only to Google, for ads and scanner diagnostics, as described below.</p>
+      <h2>Data stored on your device</h2>
+      <p>The app stores your items, stock transactions, item photos, letterhead details, signatory names and settings in its private storage on your phone. This data never leaves your device unless you choose to back it up or share it. We cannot see it.</p>
+      <p>When you save an item photo, the app removes location (GPS) data from it.</p>
+      <h2>Camera</h2>
+      <p>The camera is used only when you scan a barcode or QR code, or take an item photo. Images are processed on your device.</p>
+      <h2>Google ML Kit (barcode scanning)</h2>
+      <p>Barcode scanning uses Google ML Kit, which runs on your device. ML Kit may send Google technical information for diagnostics and usage analytics: device model and Android version, app name and version, performance and error data, and an identifier for the app installation. Google states that this data is encrypted in transit and not transferred to third parties. The list Google publishes does not include camera images or the content of scanned codes. Details: <a href="https://developers.google.com/ml-kit/android-data-disclosure">ML Kit data disclosure</a>.</p>
+      <h2>Google Drive backup (optional)</h2>
+      <p>If you connect Google Drive, the app asks Google for permission to access only the files it creates. Backups of your data, photos and letterhead are uploaded to your own Google Drive and handled under Google's Terms of Service and Privacy Policy. We never receive these files. You can disconnect Google Drive in the app at any time and delete the backup files from your Drive.</p>
+      <h2>Exports, backup files and sharing</h2>
+      <p>When you export to Excel or PDF, save a backup file, or share an item list (for example through WhatsApp), the data goes only to the place or app you choose. That app or service handles it under its own policy.</p>
+      <h2>Notifications and app lock</h2>
+      <p>Notifications show export and backup progress, backup results and expiry reminders. You can turn them off in Android settings.</p>
+      <p>App lock uses your phone's fingerprint, face or screen lock. The app never receives your biometric data.</p>
+      <h2>Google Play features</h2>
+      <p>In-app updates and in-app reviews are provided by the Google Play Store and governed by Google's Privacy Policy.</p>
+      <h2>Feedback</h2>
+      <p>If you send feedback, your email app sends the message. The draft includes the app version, Android version and device model, which you may remove before sending. We use your email only to reply and to improve the app.</p>
+      <h2>Ads (Google AdMob)</h2>
+      <p>The free version shows ads from Google AdMob: a banner at the bottom of the screen, one ad on the Reports tab, and rewarded videos that play only when you choose “Remove ads for 24 hours”. Your inventory data is never sent to ad providers.</p>
+      <p>To show and measure ads and to prevent fraud, the Google Mobile Ads SDK collects and shares with Google: your IP address (for approximate location), app and ad interactions, diagnostic information, and device identifiers such as the Android advertising ID. This data is encrypted in transit. Details: <a href="https://policies.google.com/technologies/partner-sites">how Google uses information from apps that use its services</a>.</p>
+      <p>Users in the European Economic Area, the UK and Switzerland are asked for consent before ads load, and can change it at any time under More &gt; Ad privacy options. You can reset or delete the advertising ID in Android settings. We use no analytics of our own.</p>
+      <p>Apart from ads, ML Kit diagnostics, Google Drive (when connected), Google Play features, and this policy page (loaded from our website on GitHub Pages), the app does not use the internet.</p>
+      <h2>Keeping and deleting your data</h2>
+      <p>Your data stays on your phone until you delete it in the app or uninstall the app, which removes all app data. Backups stay in your Google Drive until you delete them.</p>
+      <h2>Children</h2>
+      <p>The app is not directed at children under 13, and we do not knowingly collect data from children.</p>
+      <h2>Changes</h2>
+      <p>We will post any changes on this page and update the effective date.</p>
+      <h2>Contact</h2>
+      <p>{{ site.gudang.developer }} — <a href="mailto:{{ site.gudang.email }}">{{ site.gudang.email }}</a></p>
+    </article>
     </main>
-    <footer class="foot">
-      <p>Contact / Kontak: <a href="mailto:{{ site.gudang.email }}">{{ site.gudang.email }}</a></p>
-      <p><a href="/gudang-offline/terms/">Terms of Service / Ketentuan Layanan</a></p>
-      <p>&copy; {{ site.time | date: "%Y" }} {{ site.gudang.developer }}</p>
-    </footer>
   </div>
   <script>if(!location.hash&&/^(id|in)\b/i.test(navigator.language||""))location.replace("#id")</script>
 </body>
